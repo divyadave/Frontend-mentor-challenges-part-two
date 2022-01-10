@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cyan: hsl(179, 62%, 43%);
+ --bright-yellow: hsl(71, 73%, 54%);
+ --light-gray: hsl(204, 43%, 93%);
+ --grayish-blue: hsl(218, 22%, 67%);
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(218, 38%, 81%, 0.3);
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: grid;
+    border-radius: 7px;
+    background-color: #fff;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a""b c";
+}
+.join {
+    grid-area: a;
+}
+.sub {
+    grid-area: b;
+    background-color: var(--cyan);
+}
+.why {
+    grid-area: c;
+    background-color: hsl(179, 62%, 50%);;
+}
+.box {
+    padding: 40px;
+}
+h1 {
+    color: var(--cyan);
+    padding-bottom: 20px;
+    font-size: 26px;
+}
+h3 {
+    color: var(--bright-yellow);
+    padding-bottom: 12px;
+}
+.join p {
+    color: var(--grayish-blue);
+    line-height: 1.4;
+}
+h2 {
+    color: #FFF;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+h5 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h5 span.price {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+h5 span {
+    color: var(--light-gray);
+    font-weight: 400;
+}
+.sub p {
+    color: #FFF;
+}
+
+.sub a {
+    display: block;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 12px 0;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.why ul {
+    list-style: none;
+}
+
+.why li {
+    color: #FFF;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+@media(max-width: 425px) {
+    .wrapper {
+       grid-template-columns: 100%;
+       grid-template-areas: "a""b""c";
+    }
+    .box {
+        padding: 30px;
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
