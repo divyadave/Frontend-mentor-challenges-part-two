@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --red--: hsl(0, 78%, 62%);
+  --cyan--: hsl(180, 62%, 55%);
+ --orange--: hsl(34, 97%, 64%);
+ --blue--: hsl(212, 86%, 64%);
+ --dark-blue--: hsl(234, 12%, 34%);
+ --grayish-blue--: hsl(229, 6%, 66%);
+ --light-gray--: hsl(0, 0%, 98%);
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: var(--grayish-blue--);
+    background-color: var(--light-gray--);
+    min-height: 100vh;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+.wrapper {
+    text-align: center;
+}
+.wrapper h2 {
+    font-size: 34px;
+    font-weight: 200;
+    color: var(--dark-blue--);
+  }
+  
+.wrapper h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--dark-blue--);
+  }
+  .wrapper p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 60px;
+  }
+  .box {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: right;
+  }
+  .box-text {
+    text-align: left;
+    padding-bottom: 50px;
+  }
+  .box1 {
+    border-top: 4px solid var(--cyan--);
+  }
+  
+  .box2 {
+    border-top: 4px solid var(--red--);
+  }
+  
+  .box3 {
+    border-top: 4px solid var(--orange--);
+  }
+  
+  .box4 {
+    border-top: 4px solid var(--blue--);
+  }
+  .box-text h5 {
+    font-size: 20px;
+    color: var(--dark-blue--);
+    margin-bottom: 10px;
+  }
+  .box-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+  .box1, .box4 {
+      align-self: center;
+  }
+  @media only screen and (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    body {
+      font-size: 13px;
+    }
+  
+    .wrapper h2 {
+      font-size: 22px;
+    }
+  
+    .wrapper h3 {
+      font-size: 22px;
+    }
+  
+    .box {
+      padding: 20px;
+    }
+  
+    .box-text {
+      padding-bottom: 30px;
+    }
+  }  
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
